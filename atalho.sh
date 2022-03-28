@@ -44,7 +44,7 @@ function makeAtalho(){
     Terminal=false
     Categories=Utility;"
     echo $atalho
-    echo "$atalho" > $nome.Desktop
+    echo "$atalho" > $nome.desktop
 
 }
 
