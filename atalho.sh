@@ -33,8 +33,8 @@ function getPath(){
     # echo $IN | cut -b 
 }
 function makeAtalho(){
-    nome=$(getNome $1)
-    pasta=$(getPath $1)
+    nome=$(getNome "$1")
+    pasta=$(getPath "$1")
     atalho="[Desktop Entry]
     Name=$nome
     Exec=xdg-open $1
@@ -48,4 +48,4 @@ function makeAtalho(){
 
 }
 
-makeAtalho $1
+makeAtalho "$1"

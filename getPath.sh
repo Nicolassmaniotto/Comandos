@@ -11,10 +11,11 @@ function getPath(){
     do
         if [ $i -lt $calculo ]; then
             concac+="/"$item
+            echo $item
         fi
         i=$((i+1))
     done
     echo $concac
     # echo $IN | cut -b 
 }
-getPath "skdsaçl/dir/nb5/1651s/616/5s/d1.sjds"
+getPath $1
