@@ -31,8 +31,8 @@ function installDeb(){
     tamanho2=${#arrIN[@]}
     palavra=$arrIN[$tamanho2-1]
     tipo = ".deb"
-    if [palavra -eq  ]; then
+    if [palavra -eq  tipo]; then
     echo $tipo;
 }
 
-installDeb $1
+installDeb "$1"
