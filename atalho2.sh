@@ -32,6 +32,9 @@ function getPath(){
     echo $concac
     # echo $IN | cut -b 
 }
+# function execucao(){
+#     chmod +x $1
+# }
 function makeAtalho(){
     nome=$(getNome "$1")
     pasta=$(getPath "$1")
@@ -43,9 +46,10 @@ function makeAtalho(){
     Type=Application
     Terminal=false
     Categories=Utility;"
-    echo $atalho
+    # echo $atalho
     echo "$atalho" > $nome.desktop
-
+    # da acesso a permissao de execucao automaticamente
+    chmod +x $nome.desktop
 }
 
 makeAtalho "$1"
