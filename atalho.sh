@@ -37,7 +37,7 @@ function makeAtalho(){
     pasta=$(getPath "$1")
     atalho="[Desktop Entry]
     Name=$nome
-    Exec=xdg-open $1
+    Exec=xdg-open "$1"
     Comment=criado 
     Icon=$nome
     Type=Application
