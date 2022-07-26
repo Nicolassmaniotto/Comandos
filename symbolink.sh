@@ -1,3 +1,3 @@
 ## Symbol Link
 
-ln -s $1 $2_link
+ln -s $1 $1_link
